@@ -14,7 +14,11 @@
 
 task main()
 {
-while (SensorValue[bump]){
-		motor[drive] = 127;
-	}
+motor[drive] = 127;
+wait1Msec(3000);
+motor[drive] = 63;
+wait1Msec(3000);
+motor[drive] = 31;
+wait1Msec(3000);
+motor[drive] = 0;
 }

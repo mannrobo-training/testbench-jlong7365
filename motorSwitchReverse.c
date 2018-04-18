@@ -14,7 +14,13 @@
 
 task main()
 {
-while (SensorValue[bump]){
+while (SensorValue[bump]&&!SensorValue[limit]){
 		motor[drive] = 127;
+	}
+while (SensorValue[bump]&&SensorValue[limit]){
+		motor[drive] = -127;
+
+while (!SensorValue[bump]){
+		motor[drive] = 0;
 	}
 }

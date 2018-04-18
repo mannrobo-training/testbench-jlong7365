@@ -21,7 +21,7 @@ SensorValue[ledRed] = 1;
 
 wait1Msec(3000);
 
-SensorValue[ledGreen]--;
-SensorValue[ledYellow]--;
-SensorValue[ledRed]--;
+SensorValue[ledGreen] = 0;
+SensorValue[ledYellow] = 0;
+SensorValue[ledRed] = 0;
 }
