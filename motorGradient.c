@@ -14,11 +14,11 @@
 
 task main()
 {
-motor[drive] = 127;
+motor[port2] = 127;
 wait1Msec(3000);
-motor[drive] = 63;
+motor[port2] = 63;
 wait1Msec(3000);
-motor[drive] = 31;
+motor[port2] = 31;
 wait1Msec(3000);
-motor[drive] = 0
+motor[port2] = 0;
 }
