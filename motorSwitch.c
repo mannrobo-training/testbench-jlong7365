@@ -14,7 +14,10 @@
 
 task main()
 {
-while (SensorValue[dgtl4]){
-		motor[port2] = 127;
+while (SensorValue[bump]){
+		motor[drive] = 127;
+	}
+while (!SensorValue[bump]){
+		motor[drive] = 0;
 	}
 }
