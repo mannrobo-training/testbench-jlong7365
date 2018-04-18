@@ -15,17 +15,17 @@
 
 task main()
 {
-int ledG = SensorValue(ledGreen)
-int ledY = Sensorvalue(ledYellow)
-int ledR = SensorValue(ledRed)
+int ledG = SensorValue(ledGreen);
+int ledY = SensorValue(ledYellow);
+int ledR = SensorValue(ledRed);
 
-ledG = 1
-ledY = 1
-ledR = 1
+ledG = 1;
+ledY = 1;
+ledR = 1;
 
-wait1Msec(3000)
+wait1Msec(3000);
 
-ledG--
-ledY--
-ledR--
+ledG--;
+ledY--;
+ledR--;
 }
