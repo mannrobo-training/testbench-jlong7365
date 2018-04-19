@@ -14,7 +14,16 @@
 
 task main()
 {
-while (SensorValue[bump]){
-		motor[drive] = 127;
+	while (true)
+	{
+		if (SensorValue[bump])
+		{
+			motor[drive] = 127;
+		}
+		else
+		{
+			motor[drive] = 0;
+			wait1Msec(1);
+		}
 	}
 }
