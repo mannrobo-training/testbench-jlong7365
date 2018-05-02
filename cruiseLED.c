@@ -18,5 +18,23 @@ task main()
 	while (true)
 	{
 		motor[drive] = SensorValue(pot) / ratio;
+		if (motor[drive] > 90)
+		{
+			SensorValue[ledGreen] = 1;
+			SensorValue[ledYellow] = 0;
+			SensorValue[ledRed] = 0;
+		}
+		else if (motor[drive] <= 90&&motor[drive]>=45)
+		{
+			SensorValue[ledGreen] = 0;
+			SensorValue[ledYellow] = 1;
+			SensorValue[ledRed] = 0;
+		}
+		else
+		{
+			SensorValue[ledGreen] = 0;
+			SensorValue[ledYellow] = 0;
+			SensorValue[ledRed] = 1;
+		}
 	}
 }
