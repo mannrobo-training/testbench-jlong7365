@@ -32,5 +32,9 @@ task main()
 		}
 		else
 		{
+			SensorValue[ledGreen] = 0;
+			SensorValue[ledYellow] = 0;
+			SensorValue[ledRed] = 1;
+		}
 	}
 }

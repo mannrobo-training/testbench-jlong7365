@@ -23,7 +23,6 @@ task main()
 		else
 		{
 			motor[drive] = 0;
-			wait1Msec(1);
 		}
 	}
 }
