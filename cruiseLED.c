@@ -14,17 +14,18 @@
 
 task main()
 {
-	int ratio = 4095 / 127;
+	float ratio = 127.0 / 4095.0;
 	while (true)
 	{
-		motor[drive] = SensorValue(pot) / ratio;
-		if (motor[drive] > 90)
+		float m = 127 * SensorValue[pot] / 4095;
+		motor[drive] = m;
+		if (m > 90)
 		{
 			SensorValue[ledGreen] = 1;
 			SensorValue[ledYellow] = 0;
 			SensorValue[ledRed] = 0;
 		}
-		else if (motor[drive] <= 90&&motor[drive]>=45)
+		else if (m <= 90 && m >= 45)
 		{
 			SensorValue[ledGreen] = 0;
 			SensorValue[ledYellow] = 1;

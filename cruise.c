@@ -14,7 +14,7 @@
 
 task main()
 {
-	int ratio = 4095 / 127;
+	float ratio = 127.0 / 4095.0;
 	while (true)
 	{
 		motor[drive] = SensorValue(pot) / ratio;
